@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" target="_blank">
+                <img src="https://images.squarespace-cdn.com/content/v1/5856bc666a49634cd55b0ba9/1621447946483-Z84T1SF1UN2P9DBZAU5H/most-beautiful-places-in-the-caribbean.jpeg"
+                    width=30 height=30 alt="Resort Logo">
+
+                <b>Tourist Bureau</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activities.html" target="_blank">Activities</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="container-fluid">
+
+        <h2>Select Category</h2>
+
+        <select id="select-categories"></select>
+
+        <select id="select-activities"></select>
+
+        <br><strong>
+            <div id="activity-details"></div>
+        </strong>
+        <strong>
+            <div id="activity-location"></div>
+        </strong>
+        <strong>
+            <div id="activity-price"></div>
+        </strong>
+    </div>
+
+
+
+
+
+    <main role="main">
+        <!--checkout page with product summary table-->
+        <div class="container">
+            <h4>If you like any of our categories you can purchase an e-ticket below.</h4>
+            
+            <br>
+            <h1 class="display-4">Tickets</h1> <br>
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Gabriel" value=""
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Omoregie" value=""
+                        required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="email@gmail.com"
+                        required>
+                </div>
+                <div>
+                    <div class="col-md-6">
+                        <label for="validationDefault01" class="form-label">Address </label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="123 Address"
+                            value="" required>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Belgium</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>United Kingdom</option>
+                        <option>United States</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state" required>
+                        <option value="">Choose...</option>
+                        <option>Not applicable</option>
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Zip code required.
+                    </div>
+                </div>
+        </div>
+
+
+
+
+        </form>
+
+        <form class="row g-3">
+
+
+            <div class="mb-3">
+                <h4 class="mb-3">Payment</h4>
+                <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="form-floating col-md-6">
+                    <input type="text" class="form-control" id="cc-name" placeholder="Jane Doe" required>
+                    <label for="cc-name">Name on card</label>
+                    <small class="text-muted">Full name as displayed on card</small>
+                    <div class="invalid-feedback">
+                        Name on card is required
+                    </div>
+                </div>
+
+                <div class="form-floating col-md-6">
+                    <input type="text" class="form-control" id="cc-number" placeholder="xxx-xxxxx-xx" required>
+                    <label for="cc-number">Credit card number</label>
+                    <div class="invalid-feedback">
+                        Credit card number is required
+                    </div>
+                </div>
+
+                <div class="form-floating col-md-3">
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="12/23" required>
+                    <label for="cc-expiration">Expiration</label>
+                    <div class="invalid-feedback">
+                        Expiration date required
+                    </div>
+                </div>
+
+                <div class="form-floating col-md-3">
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
+                    <label for="cc-cvv">CVV</label>
+                    <div class="invalid-feedback">
+                        Security code required
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Buy e-ticket</button>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

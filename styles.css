@@ -1,0 +1,40 @@
+
+       
+        body {
+            margin: 120px;
+            background-color: rgb(89, 119, 111);
+            font-size: 20px;
+            
+        }
+
+       #select-categories{
+        margin-top: 30px;
+        margin-left:10px;
+       }
+       #select-activities{
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+       }
+
+       #activity-details{
+        margin-left: 10px;
+        margin-top: 5px;
+       }
+       
+       #activity-location{
+        margin-left: 10px;
+        margin-top: 5px;
+       }
+       #activity-price{
+        margin-left: 10px;
+        margin-top: 5px;
+       }
+       .display-4{
+        margin-bottom: 10px;
+       }
+        h4 {
+            margin-top: 50px;
+            
+        }
+   

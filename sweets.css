@@ -1,0 +1,36 @@
+h1 {
+    margin-top: 12px;
+}
+
+body {
+    margin: 30px;
+    background-color: rgba(89, 119, 111);
+    font-size: 20px;
+    text-align:left;
+    padding: 0;
+    margin-top: 100px;
+
+}
+
+p{
+    margin-right: 50px;
+}
+
+.form-label {
+    margin-top: 20px;
+}
+h3{
+    margin-right: 100px;
+}
+#main-page{
+    margin-left: 0%;
+}
+
+.form-check {
+    margin-top: 20px;
+}
+
+
+h4 {
+    margin-top: 50px;
+}
